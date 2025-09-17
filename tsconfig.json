@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "global.d.ts",
+     "types/**/*.d.ts",
+"app/api/**/*",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/header.jsx",
+    "src/components/footer.jsx",
+    "src/components/main.jsx",
+    "src/components/uploadModal.jsx",
+    "src/components/startupDashboard.jsx",
+    "src/components/ui/button.jsx",
+    "src/lib/socket.ts"
+, "src/components/SendEth.jsx", "src/models/User.ts"  ],
+  "exclude": ["node_modules"]
+}
